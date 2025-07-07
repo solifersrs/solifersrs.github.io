@@ -13,7 +13,7 @@
 - Online KMS
 
 📌 Открой сайт по ссылке:  
-👉 [https://твое_имя.github.io](https://твое_имя.github.io)
+👉 [solifersrs.github.io](solifersrs.github.io)
 
 ---
 
@@ -26,6 +26,5 @@
 
 ## ℹ️ Источник
 Инструкция основана на MAS (Microsoft Activation Scripts)  
-Источник: [https://massgrave.dev](https://massgrave.dev)
 
 ---
