@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Активация Windows и Office с использованием методов активации HWID/Ohook." />
+  <title>Активация Windows и Office | HWID / Ohook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Активация Windows и Office с помощью HWID / Ohook</h1>
+    <p><strong>Для Windows 8.1/10/11</strong></p>
+
+    <h2>Шаг 1</h2>
+    <p>Щелкните правой кнопкой мыши по меню "Пуск" в Windows и выберите <b>"PowerShell (Администратор)"</b> или <b>"Терминал (Администратор)"</b> (не CMD).</p>
+
+    <h2>Шаг 2</h2>
+    <p>Скопируйте и вставьте следующий код, затем нажмите Enter:</p>
+    <pre><code>irm https://get.activated.win | iex</code></pre>
+
+    <h2>Шаг 3</h2>
+    <p>Выберите метод активации, нажав соответствующую цифру.</p>
+
+    <p class="center">
+      <img src="MAS_AIO.png" alt="MAS AIO" width="600">
+    </p>
+
+    <ul>
+      <li><b>1)</b> Метод <b>HWID</b></li>
+      <li><b>2)</b> Метод <b>Ohook</b></li>
+      <li><b>3)</b> Метод <b>KMS38</b></li>
+      <li><b>4)</b> Онлайн-метод KMS</li>
+    </ul>
+
+    <table>
+      <tr><th>Тип активации</th><th>Поддерживаемый продукт</th><th>Период активации</th></tr>
+      <tr><td>HWID</td><td>Windows 10-11</td><td>Постоянная</td></tr>
+      <tr><td>Ohook</td><td>Office</td><td>Постоянная</td></tr>
+      <tr><td>KMS38</td><td>Windows 10-11-Server</td><td>До 2038 года</td></tr>
+      <tr><td>Online KMS</td><td>Windows / Office</td><td>180 дней. Пожизненно с обновлением через задачу</td></tr>
+    </table>
+
+    <div class="callout">
+      ℹ️ Для активации Windows просто жмём 1, для Office — 2.
+    </div>
+
+    <h2>Шаг 4</h2>
+    <p>Дожидаемся соответствующей надписи:</p>
+
+    <div class="tabs">
+      <button onclick="showTab(0)">Для Windows</button>
+      <button onclick="showTab(1)">Для Office</button>
+    </div>
+
+    <div id="tab-0" class="tab active">
+      <p class="center"><img src="MAS_HWID.png" alt="HWID" width="700"></p>
+    </div>
+
+    <div id="tab-1" class="tab">
+      <p class="center"><img src="MAS_Ohook.png" alt="Ohook" width="700"></p>
+    </div>
+
+    <h2>Шаг 5</h2>
+    <p>Вот и всё. Консоль можно закрыть, нажав любую клавишу.</p>
+  </div>
+
+  <script>
+    function showTab(index) {
+      document.querySelectorAll('.tab').forEach((el, i) => {
+        el.classList.toggle('active', i === index);
+      });
+    }
+  </script>
+</body>
+</html>
